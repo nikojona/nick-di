@@ -3,7 +3,7 @@ package guru.springframework.nickdi.controllers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import guru.springframework.nickdi.services.GreetingServiceImpl;
+import guru.springframework.nickdi.services.ConstructorGreetingService;
 
 /**
  * This is the 2ndt test method
@@ -18,7 +18,7 @@ class SetterInjectedControllerTest {
 	void setUp() throws Exception {
 		
 		controller = new SetterInjectedController();
-		controller.setGreetingService(new GreetingServiceImpl());
+		controller.setGreetingService(new ConstructorGreetingService());
 		
 	}
 

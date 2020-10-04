@@ -3,7 +3,7 @@ package guru.springframework.nickdi.controllers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import guru.springframework.nickdi.services.GreetingServiceImpl;
+import guru.springframework.nickdi.services.ConstructorGreetingService;
 
 /**
  * This is the 3th test method
@@ -16,7 +16,7 @@ class ConstructorInjectedControllerTest {
 	
 	@BeforeEach
 	void setUp() throws Exception {
-		controller = new ConstructorInjectedController(new GreetingServiceImpl());
+		controller = new ConstructorInjectedController(new ConstructorGreetingService());
 	}
 
 	@Test

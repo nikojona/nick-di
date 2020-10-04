@@ -3,7 +3,7 @@ package guru.springframework.nickdi.controllers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import guru.springframework.nickdi.services.GreetingServiceImpl;
+import guru.springframework.nickdi.services.ConstructorGreetingService;
 
 /**
  * This is the 1st test method
@@ -19,7 +19,7 @@ class PropertyInjectedControllerTest {
 		
 		controller = new PropertyInjectedController();
 		
-		controller.greetingService = new GreetingServiceImpl();
+		controller.greetingService = new ConstructorGreetingService();
 	}
 
 	@Test
