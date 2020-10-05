@@ -7,6 +7,7 @@ import org.springframework.context.ApplicationContext;
 import guru.springframework.nickdi.controllers.ConstructorInjectedController;
 import guru.springframework.nickdi.controllers.I18NController;
 import guru.springframework.nickdi.controllers.MyController;
+import guru.springframework.nickdi.controllers.PetController;
 import guru.springframework.nickdi.controllers.PropertyInjectedController;
 import guru.springframework.nickdi.controllers.SetterInjectedController;
 
@@ -16,6 +17,10 @@ public class NickDiApplication {
 	public static void main(String[] args) {
 		
 		ApplicationContext ctx = SpringApplication.run(NickDiApplication.class, args);
+		
+		System.out.println("------------------------ Pet Controller:");
+		PetController petController = (PetController) ctx.getBean("petController");
+		System.out.println(petController.wichPetIsTheBest());
 		
 		System.out.println("------------------------ i18n Language:");
 		I18NController i18NController = (I18NController) ctx.getBean("i18NController");
