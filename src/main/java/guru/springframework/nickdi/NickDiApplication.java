@@ -25,7 +25,7 @@ public class NickDiApplication {
 		System.out.println("------------------------ i18n Language:");
 		I18NController i18NController = (I18NController) ctx.getBean("i18NController");
 		System.out.println(i18NController.sayHello());
-		
+
 		System.out.println("------------------------ No Bean:");
 		MyController myController = (MyController) ctx.getBean("myController");
 		String greeting = myController.sayHello();
