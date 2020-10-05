@@ -1,4 +1,4 @@
-package guru.springframework.nickdi.insurance;
+package guru.springframework.nickdi.opencloseprinciple;
 
 public class VehicleInsuranceSurveyor extends InsuranceSurveyor {
 
