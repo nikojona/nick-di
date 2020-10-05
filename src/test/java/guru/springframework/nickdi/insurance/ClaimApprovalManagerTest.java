@@ -7,7 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * The package class insurance is for example Open Close Principle terminology
+ * The package class insurance is example for "Open Close Principle" from SOLID terminology
  * You can see the explanation in Course content: 43. Open Closed Principle
  * at https://www.udemy.com/course/spring-framework-5-beginner-to-guru/learn/lecture/17855112#notes
  * @author nikojona
