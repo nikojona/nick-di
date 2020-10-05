@@ -17,10 +17,12 @@ public class NickDiApplication {
 		ApplicationContext ctx = SpringApplication.run(NickDiApplication.class, args);
 		
 		MyController myController = (MyController) ctx.getBean("myController");
-		
+		System.out.println("------------------------ No Bean:");
 		String greeting = myController.sayHello();
-		
 		System.out.println(greeting);
+		
+		System.out.println("------------------------ Primary Bean:");
+		System.out.println(myController.sayHelloWithBean());
 		
 		System.out.println("------------------------ Property:");
 		PropertyInjectedController propertyInjectedController = (PropertyInjectedController) ctx.getBean("propertyInjectedController");
